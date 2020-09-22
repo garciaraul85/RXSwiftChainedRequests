@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-class NetworkingService {
+class NetworkService {
     func execute<T: Decodable>(url: URL) -> Observable<T> {
         return Observable.create { observer -> Disposable in
             // Network request
