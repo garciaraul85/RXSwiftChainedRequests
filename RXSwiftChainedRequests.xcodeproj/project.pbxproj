@@ -17,6 +17,7 @@
 		F8CE6666251A5FF800D926C8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6665251A5FF800D926C8 /* Models.swift */; };
 		F8CE6668251A60E200D926C8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6667251A60E200D926C8 /* NetworkService.swift */; };
 		F8CE666A251A637F00D926C8 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6669251A637F00D926C8 /* GithubRepository.swift */; };
+		F8CE666C251A690000D926C8 /* BranchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE666B251A690000D926C8 /* BranchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F8CE6665251A5FF800D926C8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F8CE6667251A60E200D926C8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		F8CE6669251A637F00D926C8 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
+		F8CE666B251A690000D926C8 /* BranchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				F8CE6665251A5FF800D926C8 /* Models.swift */,
 				F8CE6667251A60E200D926C8 /* NetworkService.swift */,
 				F8CE6669251A637F00D926C8 /* GithubRepository.swift */,
+				F8CE666B251A690000D926C8 /* BranchTableViewCell.swift */,
 			);
 			path = RXSwiftChainedRequests;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				F8CE6655251A5BD000D926C8 /* ViewController.swift in Sources */,
 				F8CE6651251A5BD000D926C8 /* AppDelegate.swift in Sources */,
 				F8CE6653251A5BD000D926C8 /* SceneDelegate.swift in Sources */,
+				F8CE666C251A690000D926C8 /* BranchTableViewCell.swift in Sources */,
 				F8CE6666251A5FF800D926C8 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
