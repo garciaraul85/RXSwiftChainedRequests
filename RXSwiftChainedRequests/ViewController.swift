@@ -21,10 +21,20 @@ class ViewController: UIViewController {
     }
     
     func chainNetworkCalls() {
-        githubRepository
-            .getRepos()
+        let reposObservable = githubRepository.getRepos().share()
+        
+        // Share same observable to avoid repeating network calls
+        
+        let randomNumber = Int.random(in: 0...50)
+        reposObservable.map { repos -> String in
+            let repo = repos[randomNumber]
+            return repo.name
+        }
+        .bind(to: navigationItem.rx.title)
+        .disposed(by: disposeBag)
+        
+        reposObservable
             .flatMap { repos -> Observable<[Branch]> in
-                let randomNumber = Int.random(in: 0...50)
                 let repo = repos[randomNumber]
                 return self.githubRepository.getBranches(owner: repo.owner.login, repoName: repo.name)
             }
