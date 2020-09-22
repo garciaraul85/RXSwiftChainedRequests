@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         let randomNumber = Int.random(in: 0...50)
         reposObservable.map { repos -> String in
             let repo = repos[randomNumber]
-            return repo.name
+            return "\(repo.owner.login) - \(repo.name)"
         }
         .bind(to: navigationItem.rx.title)
         .disposed(by: disposeBag)
