@@ -21,15 +21,17 @@ class ViewController: UIViewController {
     }
     
     func chainNetworkCalls() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         let reposObservable = githubRepository.getRepos().share()
         
         // Share same observable to avoid repeating network calls
-        
         let randomNumber = Int.random(in: 0...50)
         reposObservable.map { repos -> String in
             let repo = repos[randomNumber]
             return "\(repo.owner.login) - \(repo.name)"
         }
+        .startWith("Loading...")
         .bind(to: navigationItem.rx.title)
         .disposed(by: disposeBag)
         
