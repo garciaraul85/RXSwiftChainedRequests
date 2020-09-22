@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		F8CE6658251A5BD000D926C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6656251A5BD000D926C8 /* Main.storyboard */; };
 		F8CE665A251A5BD200D926C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CE6659251A5BD200D926C8 /* Assets.xcassets */; };
 		F8CE665D251A5BD200D926C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CE665B251A5BD200D926C8 /* LaunchScreen.storyboard */; };
+		F8CE6666251A5FF800D926C8 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6665251A5FF800D926C8 /* Models.swift */; };
+		F8CE6668251A60E200D926C8 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CE6667251A60E200D926C8 /* NetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		F8CE6659251A5BD200D926C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CE665C251A5BD200D926C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8CE665E251A5BD200D926C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8CE6665251A5FF800D926C8 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F8CE6667251A60E200D926C8 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,6 @@
 				7860706DEC309D5505A09E4C /* Pods-RXSwiftChainedRequests.debug.xcconfig */,
 				7054F383ED7822FFEC53FC02 /* Pods-RXSwiftChainedRequests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,8 @@
 				F8CE6659251A5BD200D926C8 /* Assets.xcassets */,
 				F8CE665B251A5BD200D926C8 /* LaunchScreen.storyboard */,
 				F8CE665E251A5BD200D926C8 /* Info.plist */,
+				F8CE6665251A5FF800D926C8 /* Models.swift */,
+				F8CE6667251A60E200D926C8 /* NetworkingService.swift */,
 			);
 			path = RXSwiftChainedRequests;
 			sourceTree = "<group>";
@@ -206,9 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8CE6668251A60E200D926C8 /* NetworkingService.swift in Sources */,
 				F8CE6655251A5BD000D926C8 /* ViewController.swift in Sources */,
 				F8CE6651251A5BD000D926C8 /* AppDelegate.swift in Sources */,
 				F8CE6653251A5BD000D926C8 /* SceneDelegate.swift in Sources */,
+				F8CE6666251A5FF800D926C8 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
