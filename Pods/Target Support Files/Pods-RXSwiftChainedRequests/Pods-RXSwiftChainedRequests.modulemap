@@ -1,0 +1,6 @@
+framework module Pods_RXSwiftChainedRequests {
+  umbrella header "Pods-RXSwiftChainedRequests-umbrella.h"
+
+  export *
+  module * { export * }
+}
